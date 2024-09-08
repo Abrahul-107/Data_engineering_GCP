@@ -1,3 +1,4 @@
 # Ignore environment files
 .myenv
 .env
+gcp_env
