@@ -11,11 +11,9 @@ query_for_create = """
     age INT64,
     join_date DATE
     );
-
-    -- Step 2: Insert dummy data into the new tabl
-
 """
 query_for_insert = """
+    -- Step 2: Insert dummy data into the new table
     INSERT INTO `datapipeline-434821.rahul.employees` (id, name, age, join_date)
     VALUES
     (1, 'John Doe', 28, '2022-01-15'),
