@@ -4,7 +4,7 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
+ 
 def upload_to_gcs(bucket_name, source_file_name, destination_blob_name):
     """
         Upload to google cloud storage from local after extracting the file from google drive
@@ -18,6 +18,10 @@ def upload_to_gcs(bucket_name, source_file_name, destination_blob_name):
     print(f'File {source_file_name} uploaded to {destination_blob_name} in {bucket_name}.')
 
 # Set your GCS bucket name and destination file name
-bucket_name = 'rahul-sales-data'
+bucket_name = 'test_107'
 source_file_name = 'sales_dataset.csv'
-destination_blob_name = 'sales_dataset.csv'
+destination_blob_name = 'test-dataset.csv'
+upload_to_gcs(bucket_name,source_file_name,destination_blob_name)
+
+"""For CLi
+gsutil cp ~/Desktop/Rahul_git/Data_engineering_GCP/upload_to_GCS/sales_dataset.csv gs://sales_dataset_test"""
