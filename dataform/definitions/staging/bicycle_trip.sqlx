@@ -1,0 +1,12 @@
+config {
+  type: "table",  // Change to "view" if you want to create a view instead
+  database: "datapipeline-434821", // This is the project ID
+  schema: "rahul", // This is the dataset ID
+  name: "bicycle_trips", // This is the name of the table or view
+  description: "Example table using the datapipeline-434821.rahul dataset",
+}
+select 
+  EXTRACT(DATE from TIMESTAMP(starttime, 'UTC')) as date,
+  DATETIME_DIFF(stoptime, starttime, SECOND) AS duration
+from 
+${ref("citibike_trips")}

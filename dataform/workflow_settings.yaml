@@ -1,0 +1,5 @@
+dataformCoreVersion: 3.0.2
+defaultProject: datapipeline-434821
+defaultLocation: US
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
