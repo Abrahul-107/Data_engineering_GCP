@@ -18,7 +18,7 @@ def fetch_py_files_from_gcs(bucket_path):
 
 # Function to delete an existing Dataproc workflow
 def delete_existing_workflow(project_id, region, template_id):
-    project_id = "rakeshmohandas_XXXX"  # Replace with your actual project ID
+    project_id = "rahul**********" 
     region = "us-central1"
     template_id = "specify a template ID HERE"
     client = dataproc.WorkflowTemplateServiceClient(client_options={
@@ -30,7 +30,7 @@ def delete_existing_workflow(project_id, region, template_id):
     print(f"Workflow Template {template_id} deleted.")
 
 def create_dataproc_workflow(py_files):
-    project_id = "rakeshmohandas_XXXX"  # Replace with your actual project ID
+    project_id = "rahul*********"  
     region = "us-central1"
     template_id = "specify a template ID HERE"
 
