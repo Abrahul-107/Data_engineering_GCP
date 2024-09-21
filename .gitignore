@@ -1,4 +1,5 @@
-# Ignore environment files
+# Ignore environment files and credential json
 .myenv
 .env
 gcp_env
+*.json
