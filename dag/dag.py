@@ -9,7 +9,6 @@ default_args = {
     'retries': 1,
     'retry_delay': timedelta(minutes=5)
 }
-#new add jst for check
 dag = DAG(
     'airflow_monitoring',
     default_args=default_args,
