@@ -1,0 +1,9 @@
+config {
+  type: "table" ,
+  database: "gcppractice-436814", //Project id
+  schema: "rahul_dataset",  // Source dataset name
+  name: "customer_dataset", //Source table name
+  description: "Raw dataset from BigQuery"
+}
+
+SELECT * FROM `gcppractice-436814.rahul_dataset.customer_dataset`  -- Replace with your actual table name
